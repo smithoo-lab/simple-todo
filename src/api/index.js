@@ -1,4 +1,5 @@
 import * as firebase from 'firebase/app';
+import 'firebase/auth';
 
 export const api = {
     initialize() {
@@ -25,6 +26,19 @@ export const api = {
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
     },
+
+    loginWithGoogle() {
+        const provider = new firebase.auth.GoogleAuthProvider();
+        return firebase.auth().signInWithRedirect(provider);
+    },
+
+    getGoogleLoginResult() {
+        return firebase.auth().getRedirectResult();
+    },
+
+    logoutWithGoogle() {
+        return firebase.auth().signOut();
+    }
 };
 
 export default api;
