@@ -29,20 +29,6 @@
     "sass-loader": "^7.1.0",
     "vue-template-compiler": "^2.6.10"
   },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "rules": {},
-    "parserOptions": {
-      "parser": "babel-eslint"
-    }
-  },
   "postcss": {
     "plugins": {
       "autoprefixer": {}
@@ -74,7 +60,7 @@
       "jest-serializer-vue"
     ],
     "testMatch": [
-      "**/tests/unit/**/*.spec.(js|jsx|ts|tsx)|**/__tests__/*.(js|jsx|ts|tsx)"
+      "**/__tests__/*.(js|jsx|ts|tsx)"
     ],
     "testURL": "http://localhost/",
     "watchPlugins": [
