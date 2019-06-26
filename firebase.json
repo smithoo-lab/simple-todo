@@ -1,0 +1,6 @@
+{
+    "hosting": {
+      "site": "smithoo-simple-todo",
+      "public": "public"
+    }
+}
